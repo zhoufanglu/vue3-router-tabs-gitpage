@@ -6,6 +6,7 @@ import vueSetupExtend from 'vite-plugin-vue-setup-extend'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/vue3-router-tabs-gitpage/',
   plugins: [vue(), DefineOptions(), vueSetupExtend()],
   resolve: {
     alias: {
@@ -20,5 +21,10 @@ export default defineConfig({
         additionalData: '@import "@/assets/styles/entrance.scss";'
       }
     }
+  },
+  // 根据配置的环境变量，判断打包路径
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
   }
 })
