@@ -6,7 +6,10 @@
 <template>
   <div class="chrome-test">
     <iframe src="https://www.baidu.com/"></iframe>
-    <div class="click-panel" @click="handleClick"> click me </div>
+    <div class="click-panel" @click="handleClick">
+      click me <br />
+      look at console
+    </div>
   </div>
 </template>
 
