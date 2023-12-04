@@ -1,0 +1,1 @@
+import{d as e,r as _,o,a as s,a4 as t}from"./index.bcb2642e.js";const n={class:"prop-demo"},a=e({__name:"index",setup(d){return _(),(c,p)=>(o(),s("div",n," 3 "))}});const i=t(a,[["__scopeId","data-v-d210127d"]]);export{i as default};
