@@ -4,6 +4,7 @@ const layout = () => import('@/views/layout/index.vue')
 
 import test from '@/router/modules/test'
 
+const chromeTest = () => import('@/views/chrome-test/index.vue')
 /**
  * 基础路由
  */
@@ -14,6 +15,10 @@ const basePage: RouteRecordRaw[] = [
     component: layout,
     meta: { title: '' },
     children: [...test]
+  },
+  {
+    path: '/chrome-test',
+    component: chromeTest
   }
 ]
 
